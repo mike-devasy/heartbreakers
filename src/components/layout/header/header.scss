@@ -1,0 +1,38 @@
+.header {
+	z-index: 100;
+position: fixed;
+width: 100%;
+top: 0;
+left: 0;
+  
+padding-block: 20px;
+	padding-inline: 110px;
+	// min-height: 115px;
+	align-items: center;
+	@media (max-width:toEm(800)){
+		padding-inline: 20px; 
+	}
+    &__container {
+			display: flex;
+			@media (max-width: toEm(1120)){
+				  	 justify-content: space-between; 
+			}
+			@media (max-width:toEm(800)){
+				 justify-content: center; 
+
+			}
+    }
+
+    &__logo, &__fruit-logo {
+		 width: 176px;
+ 
+		@media screen and (orientation: landscape) and (max-height:520px) and (min-aspect-ratio:13/9){
+			display: none;
+			}
+
+    }
+
+    &__image {
+    }
+}
+
