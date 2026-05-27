@@ -70,6 +70,10 @@ export default {
       sizes: [600, 1200],
       dpi: [],
       attrignore: "data-fls-image-ignore",
+      cssignore: [
+        "hero/hero-bg.jpg",
+        // или "background-scaled.jpg"
+      ],
       modernformat: {
         enable: true,
         type: "webp", // webp/avif

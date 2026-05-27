@@ -179,7 +179,7 @@ body {
   min-height: 100dvh;
   overflow: hidden;
   isolation: isolate;
-  background: url("../assets/img/hero/hero-bg.webp") center/cover no-repeat;
+  background: url("../assets/img/hero/hero-bg.jpg") center/cover no-repeat;
 }
 .hero__inner {
   position: relative;
