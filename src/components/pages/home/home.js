@@ -87,18 +87,7 @@ wheelLayout.addEventListener("click", () => {
     spinWheel(2)
   }
 })
-  // spinButton.addEventListener("click", () => {
-  //   if (isSpinning) return
-
-  //   if (stage === 0) {
-  //     spinWheel(1)
-  //     return
-  //   }
-
-  //   if (stage === 1) {
-  //     spinWheel(2)
-  //   }
-  // })
+  
 }
 
  

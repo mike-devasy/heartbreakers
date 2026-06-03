@@ -20,7 +20,6 @@ body::after {
 	left: 0;
 	bottom: 0;
 	right: 0;
-	// padding: 30px 10px;
 	transition: visibility 0.8s ease 0s;
 	visibility: hidden;
 	pointer-events: none;
@@ -52,45 +51,40 @@ body::after {
 	transition:
 		transform 0.3s ease 0s,
 		visibility 0.3s ease 0s;
-	// background-color: #eee;
-	// padding: 20px;
-		min-height: 100svh;
-height: 100%;
+ 
+	min-height: 100svh;
+	height: 100%;
 	width: 100%;
-	// max-width: 1980px;
-	// border-radius: 20px;
+ 
 }
 
 [data-fls-popup-youtube-place] iframe {
 	width: 100%;
 	aspect-ratio: 16 / 9;
 }
-.popup{
+.popup {
 	&__body {
-
 	}
-	&__content{
-	 
-display: grid;
+	&__content {
+		display: grid;
 		min-height: 100dvh;
-		background-image: url('@img/popup/popup-bg.png');
-		background-size: cover;	
+		background-image: url("@img/popup/popup-bg.png");
+		background-size: cover;
 		background-position: center;
 		background-position-y: 90%;
 		background-repeat: no-repeat;
 		height: 100dvh;
 		@media (max-width: toEm(1550)) {
-			  min-height: 720px;
- 		background-position-y: 50%;
+			min-height: 720px;
+			background-position-y: 50%;
 		}
-	 
-		@media (max-width: toEm(1100)){
-			  padding-inline: 15px;
+
+		@media (max-width: toEm(1100)) {
+			padding-inline: 15px;
 		}
-		@media (max-width:toEm($mobileSmall)){
-			    padding-inline: 0px;
+		@media (max-width: toEm($mobileSmall)) {
+			padding-inline: 0px;
 		}
-	 
 	}
 }
 .form {
@@ -99,45 +93,38 @@ display: grid;
 	display: grid;
 	justify-content: center;
 	align-items: center;
- 
+
 	transition: transform 0.3s;
 
- 
- 
- 
 	@media (max-width: toEm(1550)) {
 		transform-origin: top center;
 		transform: translateY(4%) scale(0.8);
- 
 	}
- @media (max-width: toEm(1300)){
-
- }
+	@media (max-width: toEm(1300)) {
+	}
 	@media (max-width: toEm(600)) {
 		transform: scale(1);
 		transform-origin: center;
 		transform: translateY(0);
-		 max-height: none;
+		max-height: none;
 
 		// margin-left: 0px;
 		// width: 100%;
 	}
- 
- 
 
 	&__content {
-				border-radius: 32px;
- background: linear-gradient(135deg, #223 0%, #112 100%);
- padding-block: 35px;
- padding-inline: 65px;
+		border-radius: 32px;
+		background: linear-gradient(135deg, #223 0%, #112 100%);
+		padding-block: 35px;
+		padding-inline: 65px;
 		max-width: 556px;
 		width: 100%;
-@media (max-width: toEm(600)){
-	  @include adaptiveValue("padding-inline", 65, 20);
-}
- @media (max-width:toEm($mobileSmall)){
-	 border-radius: 0; 
- }
+		@media (max-width: toEm(600)) {
+			@include adaptiveValue("padding-inline", 65, 20);
+		}
+		@media (max-width: toEm($mobileSmall)) {
+			border-radius: 0;
+		}
 	}
 
 	&__shell-top {
@@ -230,37 +217,10 @@ display: grid;
 		text-decoration: underline;
 		text-underline-offset: 2px;
 		white-space: nowrap;
-		@media (max-width: toEm(1100)) {
-			// display: none;
-		}
 	}
 	&__content-support {
 		display: none;
-		// @media (max-width: toEm(1100)) {
-		// 	display: flex;
-		// 	justify-content: center;
-		// 	align-items: center;
-		// 	width: 48px;
-		// 	height: 48px;
-		// 	border-radius: 12px;
-		// 	background: var(--bg-input-color);
-		// }
-		// @media (max-width: toEm($mobileSmall)) {
-		// 	background: transparent;
-		// }
 	}
-	// &__content-support-icon {
-	// 	display: none;
-	// 	@media (max-width: toEm(1100)) {
-	// 		display: inline-block;
-	// 		width: 20px;
-	// 		height: 20px;
-	// 		flex-basis: 20px;
-	// 		background: var(--secondary);
-	// 		-webkit-mask: url("@img/svgicons/headphones.svg") center / contain no-repeat;
-	// 		mask: url("@img/svgicons/headphones.svg") center / contain no-repeat;
-	// 	}
-	// }
 }
 
 .form-column {
@@ -360,10 +320,6 @@ display: grid;
 
 .field--phone input {
 	flex: 1 1 auto;
-}
-
-.field input::placeholder {
-	// color: rgba(255, 255, 255, 0.94);
 }
 
 .field:not(.field--phone) input:not(:placeholder-shown) {
@@ -576,7 +532,7 @@ display: grid;
 	border-radius: 12px;
 	background: var(--orangeColor);
 	color: #ffffff;
-		font-family: var(--secondaryFont);
+	font-family: var(--secondaryFont);
 	@include adaptiveValue("font-size", 20, 16);
 	font-weight: 700;
 	line-height: 1.18;

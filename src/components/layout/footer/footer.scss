@@ -1,5 +1,26 @@
 .footer {
+	padding-block: 24px;
 	// .footer__container
 	&__container {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 10px 24px;
+    color: rgba(255, 255, 255, 0.72);
+		font-size: 14px;
+		line-height: 1.4;
+ 
+	}
+	&__brand-link {
+	 
+	  
+		transition: all 0.5s;
+		@media (any-hover: hover){
+			&:hover{
+				color: rgb(255, 255, 255);
+			}
+		
+	}
 	}
 }

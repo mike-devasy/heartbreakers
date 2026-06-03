@@ -6,9 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="./assets/img/logo-fav.svg">
 		<title>Heartbreakers</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1779962777226"></script>
-		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1779962777226">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1779962777226">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1780497592327"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1780497592327">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1780497592327">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -26,7 +26,7 @@
 			</header>
 			<main class="page">
 				<!-- @format -->
-				<main class="page--home home">
+				<div class="page--home home">
 					<section class="page__hero hero">
 						<div class="hero__inner">
 							<div class="hero__titles">
@@ -37,7 +37,10 @@
 							</div>
 							<div class="hero__wheel-layout">
 								<div class="hero__wheel-holder">
-									<img src="./assets/img/hero/hero-wheel-holder%20.png" alt="" class="hero__holder-image">
+									<picture>
+										<source media="(max-width: 600px)" srcset="./assets/img/hero/hero-wheel-holder-600.webp" type="image/webp">
+										<img alt="" class="hero__holder-image" src="./assets/img/hero/hero-wheel-holder.webp">
+									</picture>
 								</div>
 								<picture class="hero__wheel-picture">
 									<picture>
@@ -83,10 +86,22 @@
 							</picture>
 						</div>
 					</section>
-				</main>
+				</div>
 			</main>
 			<footer data-fls-footer="" class="footer">
-				<div class="footer__container"></div>
+				<div class="footer__container">
+					<p class="footer__brand">© CuatroBet</p>
+					<p>
+						<a href="https://cuatrobet.com/es/privacy?regBonus=1" class="footer__brand-link">Política de Privacidad</a>
+					</p>
+					<p>
+						<a href="https://cuatrobet.com/es/responsible-gambling?regBonus=1" class="footer__brand-link">Juego Responsable</a>
+					</p>
+					<p>
+						Contacto:
+						<a href="mailto:ayuda@cuatrobet.com" class="footer__brand-link">ayuda@cuatrobet.com</a>
+					</p>
+				</div>
 			</footer>
 		</div>
 		<button type="button" data-fls-popup-link="popup" id="openRegistrationPopupButton" hidden></button>
